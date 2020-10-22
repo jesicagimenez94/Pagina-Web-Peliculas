@@ -10,7 +10,7 @@
       require("conexion.php");   
       $consulta=mysqli_query($conexion,"SELECT * FROM movies");
       $total_productos=mysqli_num_rows($consulta);?>
-    <br><br><br>
+    <br><br>
    
     <div align="center"><h2 style="color:white">Cartelera</h2></div>
     <br>
