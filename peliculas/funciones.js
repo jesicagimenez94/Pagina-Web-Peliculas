@@ -24,3 +24,4 @@ function mostrarRecuadro() {
   let x = $("#descripcion");
   x.show("fast");
 }
+
