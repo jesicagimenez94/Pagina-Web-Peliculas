@@ -10036,3 +10036,17 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+
+.check-ok {
+color: lime;
+}
+input:invalid ~ .check-ok {
+display: none;
+}
+input:valid ~ .check-ok {
+display: inline;
+}
+input:valid {
+background-color: #BBFFF0;
+}

@@ -17,7 +17,8 @@
   <div class="form-row">
     <div class="form-group col-md-12">
       <label for="inputEmail4">Titulo</label>
-      <input type="text" class="form-control" name="titulo" id="titulo" required placeholder="ingrese nombre de la pelicula">
+      <input type="text" class="form-control" name="titulo" id="titulo" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,220}" required placeholder="ingrese nombre de la pelicula">
+      <i class="fa fa-check check-ok"></i>
     </div>
     <div class="form-group col-md-12">
       <label for="inputEmail4">imagen</label>
@@ -31,11 +32,11 @@
     </div>
   <div class="form-group col-md-4">
       <label for="inputPassword4">Duracion</label>
-      <input type="text" class="form-control" name="duracion" id="duracion" required placeholder="ingrese solo numeros">
+      <input type="number" class="form-control" name="duracion" id="duracion" required placeholder="ingrese solo numeros">
     </div>
     <div class="form-group col-md-4">
       <label for="inputPassword4">año</label>
-      <input type="text" class="form-control" name="anio" id="anio" required placeholder="ingrese solo numeros enteros">
+      <input type="year" class="form-control" name="anio" id="anio" required placeholder="ingrese solo numeros enteros">
     </div>
   </div>
   <div class="form-group">
@@ -68,7 +69,7 @@
            $imagen=$_POST['imagen'];
            $descripcion=$_POST['descripcion'];
            $anio=$_POST['anio'];
-           $Insert=mysqli_query($conexion,"INSERT INTO movies values (00,'$titulo',$anio,$puntaje,$duracion,'$genero','$descripcion','$imagen')");
+           $Insert=mysqli_query($conexion,"call sp_insertar_peliculas('$titulo',$anio,$puntaje,$duracion,'$genero','$descripcion','$imagen')");
            echo "<script>alert('pelicula agregada');</script>";
 	
       }

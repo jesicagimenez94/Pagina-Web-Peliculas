@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="estilos.css">
         <style>
             .logoUser form label{
@@ -25,19 +26,25 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                       <div class="form-group">
+                                          <!-- nombre entre 3 y 50 caracteres-->
                                          <label>Nombre</label>
-                                         <input type="text" class="form-control" name="nombre" id="nombre"  placeholder="ingrese su nombre">
+                                         <input type="text" class="form-control" name="nombre" id="nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,50}" title="Ingrese su nombre. entre 3 y 50 caracteres" placeholder="ingrese su nombre">
+                                       
                                       </div>
                                       
                                     </div>
                                     <div class="col-md-12">
                                       <div class="form-group">
+                                          <!-- validacion formato mail-->
                                          <label>E-mail</label>
-                                         <input type="text" class="form-control" name="mail" id="mail" placeholder="ingrese su e-mail" onkeyup="validarMail()">
+                                         <input type="text" class="form-control" name="mail" id="mail" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="Ingrese un formato de mail valido" placeholder="ingrese su e-mail" onkeyup="validarMail()">
+                                         
                                       </div>
                                       <div class="form-group">
+                                          <!-- Contraseña entre 8 y 12 caracteress-->
                                          <label>Contraseña</label>
-                                         <input type="password" class="form-control" name="contr" id="contr" placeholder="ingrese su contraseña">
+                                         <input type="password" class="form-control" name="contr" id="contr" pattern="[A-Za-z0-9!?-]{8,12}" title="Ingrese una contraseña de min. 8 y max. 12 caracteres" placeholder="ingrese su contraseña entre 8 y 12 caracteres">
+                                         
                                       </div>
                                     </div>
                                     <a style="float:left;margin-left:15px;text-decoration: #121212;" href="login.php">Ya tengo una cuenta</a>

@@ -107,7 +107,7 @@
                      <li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
                      <li class="page-item active"><a class="page-link" href="peliculas.php?peliculas=1">1</a></li>
                      <?php for ($i = 2; $i <= $pag; $i++) : ?>
-                        <li class="page-item"><a class="page-link" href="peliculas.php?peliculas=<?php echo $i ?>"><?php echo $i ?></a></li>
+                        <li class="page-item"><a class="page-link" href="peliculas.php?peliculas=1"<?php echo $i ?>"><?php echo $i ?></a></li>
                      <?php endfor ?>
                      <li class="page-item"><a class="page-link" href="peliculas.php?peliculas=2">Siguiente</a></li>
                   </ul>

@@ -20,16 +20,24 @@
                       while ($r=mysqli_fetch_array($registro)) {
                     ?>
                     
-                       <div>
+                         <div>
                           <img src="<?php echo $r['imagen'];?>" style="width:350px;height: 350px">
                        </div>
                        <div>
                  	        <h4 style="padding: 3%">
                             <?php  echo $r['titulo']."<br>"; echo $r['puntaje']."   |   ".$r['anio'];?>
                           </h4>
-                          <h4><?php echo $r['descripcion'];?></h4>
-                       </div>   
-                      
+
+                         <input type="button" id="boton1" value="Ocultar descripción">
+                         <input type="button" id="boton2" value="Mostrar descripción">
+                
+                         <div id="descripcion" class="recuadro">
+                             <h4><?php echo $r['descripcion'];?></h4>
+                         </div>
+                       
+                         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                         <script src="funciones.js"></script>
+                       </div>
                     <?php
                        }
                     ?>
