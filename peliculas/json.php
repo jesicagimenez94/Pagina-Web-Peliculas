@@ -11,9 +11,9 @@ foreach ($u as $key){
         $datos[$k]=$v;
     array_push($response['movies'],$datos);
     $fp= fopen('json/result.json','w');
-    $fp= fopen('json/result.txt','w');
-    $fp= fopen('json/result.pdf','w');
     fwrite($fp, json_encode($response));
+    
+    
     fclose($fp);
    /* $salida=$response.".txt";
     header('Content-type: txt ');
