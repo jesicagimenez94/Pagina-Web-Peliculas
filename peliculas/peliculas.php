@@ -113,7 +113,7 @@
                      <li class="page-item"><a class="page-link" href="peliculas.php?peliculas=2">Siguiente</a></li>
                      <li class="page-item">
             <form method="post">
-                <input id="json" style="color:white" class="page-link" type="submit" name="descarga" value="descarga">
+                <input id="json" style="color:black" class="page-link" type="submit" name="descarga" value="descarga">
                 
             </form>
             

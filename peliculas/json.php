@@ -10,7 +10,7 @@ foreach ($u as $key){
     foreach ($key as $k => $v)
         $datos[$k]=$v;
     array_push($response['movies'],$datos);
-    $fp= fopen('result.json','w');
+    $fp= fopen('json/result.json','w');
     fwrite($fp, json_encode($response));
     fclose($fp);
    /* $salida=$response.".txt";
