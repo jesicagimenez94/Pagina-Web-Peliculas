@@ -51,6 +51,7 @@
       <li class="nav-item">
           <a id="contacto" style="color:white" class="nav-link" href="contacto.php">Contacto</a>
       </li>
+        
       
   </ul>
 
