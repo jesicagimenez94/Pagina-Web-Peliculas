@@ -10,6 +10,8 @@
    require("menu.php");
    require("conexion.php");
    require("json.php");
+   require ("txt.php");
+   require ("pdf.php");
    ?>
    <br>
    <div class="container">
@@ -113,7 +115,9 @@
                      <li class="page-item"><a class="page-link" href="peliculas.php?peliculas=2">Siguiente</a></li>
                      <li class="page-item">
             <form method="post">
-                <input id="json" style="color:black" class="page-link" type="submit" name="descarga" value="descarga">
+                <input id="json" style="color:black" class="page-link" type="submit" name="json" value="json">
+                <input id="json" style="color:black" class="page-link" type="submit" name="txt" value="txt">
+                <input id="json" style="color:black" class="page-link" type="submit" name="pdf" value="pdf">
                 
             </form>
             

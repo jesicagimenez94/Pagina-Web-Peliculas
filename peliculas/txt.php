@@ -1,7 +1,7 @@
 <?php
 include 'conexion.php';
 
-if(isset($_POST["json"])){
+if(isset($_POST["txt"])){
 $response=array();
 $u=mysqli_query($conexion,"select * from movies");
 $response['movies']=array();
@@ -10,7 +10,7 @@ foreach ($u as $key){
     foreach ($key as $k => $v)
         $datos[$k]=$v;
     array_push($response['movies'],$datos);
-    $fp= fopen('json/result.json','w');
+    $fp= fopen('json/result.txt','w');
     fwrite($fp, json_encode($response));
     
     
