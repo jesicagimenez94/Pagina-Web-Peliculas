@@ -1,4 +1,5 @@
-<?php     
+<?php  
+
   $id_usuario=0;
   $nombre_usuario="";
   require("conexion.php");
@@ -51,7 +52,7 @@
       <li class="nav-item">
           <a id="contacto" style="color:white" class="nav-link" href="contacto.php">Contacto</a>
       </li>
-        
+ 
       
   </ul>
 
