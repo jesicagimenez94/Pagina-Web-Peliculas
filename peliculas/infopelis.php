@@ -28,8 +28,8 @@
                             <?php  echo $r['titulo']."<br>"; echo $r['puntaje']."   |   ".$r['anio'];?>
                           </h4>
 
-                         <input type="button" id="boton1" value="Ocultar descripción">
-                         <input type="button" id="boton2" value="Mostrar descripción">
+                         <input type="button" id="boton1" value="Descripción">
+
                 
                          <div id="descripcion" class="recuadro">
                              <h4><?php echo $r['descripcion'];?></h4>
