@@ -12,9 +12,9 @@ if(isset($_POST["txt"])){
      for($i = 0; $i < $num; $i++) {    
       fwrite($fh, $row[$i]);      
       if ($row[$i] != $last) 
-       fwrite($fh, " \n"); 
+       fwrite($fh, " \ "); 
      }                 
-     fwrite($fh, "\n  --------------------------------------------------------------------------------------------  \n"); 
+     fwrite($fh, " \n"); 
 } 
     fclose($fh); 
 }
