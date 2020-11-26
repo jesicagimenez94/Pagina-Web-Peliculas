@@ -11,6 +11,7 @@
                  float:left;
             }
         </style>
+        <script src="funciones1.js"></script>
     </head>
     <body style="background-color: #212121;">
         <div class="container">
@@ -20,13 +21,13 @@
               </div>
                 <div class="col-md-12" align="center" style="padding-top:60px">
                         <div class="col-md-8 logoUser" style="background:#e8ead3">
-                             <form  method="POST" action="">
+                             <form  method="POST" action="pagina1.php" id="formulario">
                                 <h4>Contactanos</h4><br>
                                 <div class="row">
                                     <div class="col-md-12">
                                       <div class="form-group">
                                          <label>Nombre</label>
-                                         <input type="text" class="form-control" name="nombre" id="nombre"  placeholder="ingrese su nombre">
+                                         <input type="text" class="form-control" name="nombre" id="nombre" z placeholder="ingrese su nombre">
                                       </div>
                                       
                                     </div>
@@ -37,20 +38,16 @@
                                       </div>
                                       <div class="form-group">
                                          <label>Mensaje</label>
-                                         <input type="text" class="form-control" name="contr" id="contr" placeholder="ingrese su mensaje">
+                                         <input type="text" class="form-control" name="comentarios" id="comentarios" placeholder="ingrese su mensaje">
                                       </div>
                                     </div>
                   
                                     <br><br>
                                     <div class="col-md-12">
                                        <div class="form-group">
-                                           <SCRIPT languaje="JavaScript">
-                                            function pulsar() {
-                                             alert("Gracias, su mensaje a sido enviado!");
-                                             }
-                                            </SCRIPT>
-                                            <button name="contacto" value="contacto" id="btnContacto" class="btn btn-dark" onclick="pulsar()">Enviar</button>
-              
+                                         
+                                            <button name="contacto" value="Enviar" id="enviar" id="btnContacto" class="btn btn-dark" onclick="pulsar()">Enviar</button>
+                                            <div id="resultados"></div>
                                        </div>
                                     </div>
                                 </div>
@@ -59,3 +56,10 @@
                 </div>
             </div>
         </div>
+      </body>
+      </html>
+        <SCRIPT languaje="JavaScript">
+                                            function pulsar() {
+                                             alert("Gracias, su mensaje a sido enviado!");
+                                             }
+                                            </SCRIPT>
