@@ -28,7 +28,7 @@
                                       <div class="form-group">
                                           <!-- nombre entre 3 y 50 caracteres-->
                                          <label>Nombre</label>
-                                         <input type="text" class="form-control" name="nombre" id="nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,50}" title="Ingrese su nombre. entre 3 y 50 caracteres" placeholder="ingrese su nombre">
+                                         <input type="text" class="form-control" name="nombre" id="nombre" pattern="[a-zA-Z]{2,50}" title="Ingrese su nombre. entre 3 y 50 caracteres" placeholder="ingrese su nombre">
                                        
                                       </div>
                                       
