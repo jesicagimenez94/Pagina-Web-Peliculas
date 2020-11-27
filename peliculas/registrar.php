@@ -67,8 +67,7 @@
             $pass=$_REQUEST['contr'];
             require("conexion.php");
               if (!empty($nombre) && !empty($user) && !empty($pass)) {
-              $funcion_validar_mail="SELECT funcion_validar_mail($user)";
-              $sql=mysqli_query($conexion,$funcion_validar_mail);
+              $sql=mysqli_query($conexion,"select * from users where email='$user'");
                 if(mysqli_num_rows($sql)>0){ 
                       echo "<script>alert('email invalido');</script>";          
                 }else{
