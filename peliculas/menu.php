@@ -1,5 +1,8 @@
 <?php  
-
+   require("json.php");
+   require ("txt.php");
+   require ("pdf.php");
+   
   $id_usuario=0;
   $nombre_usuario="";
   require("conexion.php");
@@ -47,7 +50,7 @@
           <a id="inicio" style="color:white" class="nav-link" href="index.php">Inicio</a>
        </li>
        <li class="nav-item">
-          <a id="contacto" style="color:white" class="nav-link" href="peliculas.php">Peliculas</a>
+          <a id="contacto" style="color:white" class="nav-link" href="peliculas.php?peliculas=1">Peliculas</a>
       </li>
       <li class="nav-item">
           <a id="contacto" style="color:white" class="nav-link" href="contacto.php">Contacto</a>
@@ -69,6 +72,12 @@
                  <a class="red" href="" target="_blank"><i class="fab fa-instagram ins"></i></a>
                  <a class="red" href="" target="_blank"><i class="fab fa-facebook fac"></i></a>
                  <a class="red" href="" target="_blank"><i class="fab fa-twitter twt"></i></a>
+             <form method="post">
+                <input id="json" style="color:black" class="btn btn-danger" type="submit" name="json" value="json">
+                <input id="json" style="color:black" class="btn btn-danger" type="submit" name="txt" value="txt">
+                <input id="json" style="color:black" class="btn btn-danger" type="submit" name="pdf" value="pdf">
+                
+            </form>
            
     <div style="float: right">
  <?php if ($id_usuario==0): ?>

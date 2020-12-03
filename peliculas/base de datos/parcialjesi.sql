@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-11-2020 a las 22:14:39
+-- Tiempo de generación: 03-12-2020 a las 16:38:22
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.2.29
 
@@ -106,7 +106,8 @@ INSERT INTO `historial_actualizaciones` (`id_movies`, `titulo`, `fecha_modificac
 (12, 'Deadpool 2', '2020-11-12 18:35:58'),
 (27, 'jjjjjjj', '2020-11-01 19:24:28'),
 (30, 'ccc', '2020-11-08 18:10:53'),
-(31, 'The Little Mermaid', '2020-11-08 18:08:07');
+(31, 'The Little Mermaid', '2020-11-08 18:08:07'),
+(36, 'The Rental', '2020-12-03 12:28:44');
 
 -- --------------------------------------------------------
 
@@ -152,7 +153,10 @@ INSERT INTO `movies` (`id_movie`, `titulo`, `anio`, `puntaje`, `duracion`, `gene
 (24, 'Pocahontas\r\n', 1995, 7.7, 86, 'Animación', 'Pocahontas es la hija de Powhatan, el jefe de una tribu india de América del Norte. Un día observa la llegada de un grupo de colones ingleses, encabezados por el ambicioso gobernador Radcliff y el valiente capitán John Smith. Acompañada de sus compañ', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTK1JI-NyXU4fM4pUjHumTAa4klkwN6DCjvKHAPlooJsa3fMJAZ'),
 (25, 'Aladdín', 1992, 7.4, 85, 'Animación', 'En Bagdad, un ladrón árabe halla una lámpara mágica y trata de ganar el amor de una princesa con la ayuda de los deseos concedidos por un genio.', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLJfyLL9_3p3S8SSgLr8KFLfP0Z8o40ejGkHp8az08pTTUegMH'),
 (33, 'Bao', 2018, 7.5, 160, 'Animacion', 'Una mujer que sufre del síndrome del nido vacío tiene una segunda oportunidad de maternidad cuando una de sus bolas de masa hechas a mano cobra vida.', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbaMt-smzw74pIXJ2qnY1WlCQmjxfF4pKmYxEtxPgu0YimyH18'),
-(35, 'Niña Estrella', 2018, 7.5, 160, 'Comedia', 'Una adolescente desarrolla un incipiente romance con Stargirl Caraway, una nueva estudiante de espíritu libre que causa un gran revuelo en su primer día de clases.', 'https://upload.wikimedia.org/wikipedia/en/1/1f/Star_girl_Movie_Poster.jpeg');
+(35, 'Niña Estrella', 2018, 7.5, 160, 'Comedia', 'Una adolescente desarrolla un incipiente romance con Stargirl Caraway, una nueva estudiante de espíritu libre que causa un gran revuelo en su primer día de clases.', 'https://upload.wikimedia.org/wikipedia/en/1/1f/Star_girl_Movie_Poster.jpeg'),
+(36, 'The Rental', 2020, 7.5, 108, 'fantasia', 'Dos parejas en una escapada junto al mar comienzan a sospechar que el anfitrión de su casa de alquiler aparentemente perfecta puede estar espiando. En poco tiempo, lo que debería haber sido un viaje de fin de semana de celebración se convierte en alg', 'https://holacine.com.ar/wp-content/uploads/2020/07/The-Rental-de-Dave-Franco-gana-la-taquilla-de-fin-de-semana-de-la-Comic-Con.jpg'),
+(37, 'Maggie Simpson in Playdate with Destiny', 2020, 6.5, 100, 'Animacion', 'Maggie Simpson en \"Playdate with Destiny\" es un cortometraje de animación estadounidense de 2020 basado en la serie de televisión animada Los Simpson. La película presenta a Maggie Simpson. La película se estrenó el 29 de febrero de 2020, adjunta a l', 'https://pics.filmaffinity.com/the_simpsons_playdate_with_destiny_s-586398771-large.jpg'),
+(38, 'Enola Holms', 2020, 6.5, 132, 'Comedia', 'Mientras busca a su madre desaparecida, la intrépida adolescente Enola Holmes usa sus habilidades de detective para burlar a su hermano mayor Sherlock y ayudar a un señor fugitivo.', 'https://pics.filmaffinity.com/Enola_Holmes-445273541-large.jpg');
 
 --
 -- Disparadores `movies`
@@ -234,7 +238,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `movies`
 --
 ALTER TABLE `movies`
-  MODIFY `id_movie` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id_movie` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
